@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/addImageHarvest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/a" />
+
+            <TextView
+                android:id="@+id/HarvestCropName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/c" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/TextView4"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/htdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/datestyle"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/TextView_5"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:text="@string/qty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/TextView6"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:text="@string/expences"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/IncomeHarvest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/nol"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:text="@string/labours"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/nole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:weightSum="2" >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btnSaveHarvest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="#63C964"
+                android:text="@string/save"
+                android:textColor="@color/w" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btnViewHarvest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#63C964"
+                android:text="@string/btn_view"
+                android:textColor="@color/w" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

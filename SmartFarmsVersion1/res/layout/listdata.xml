@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/Cropname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/landlistitem"
+        android:layout_alignBottom="@+id/landlistitem"
+        android:layout_alignParentLeft="true"
+        android:gravity="right"
+        android:text="Crop Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/b" />
+
+    <TextView
+        android:id="@+id/Datelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Cropname"
+        android:layout_below="@+id/Cropname"
+        android:layout_marginTop="30dp"
+        android:gravity="right"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/b" />
+
+    <TextView
+        android:id="@+id/ExpenseLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Datelbl"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:text="Expense"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/b" />
+
+    <TextView
+        android:id="@+id/ActDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Datelbl"
+        android:layout_alignBottom="@+id/Datelbl"
+        android:layout_alignLeft="@+id/plantActivity"
+        android:gravity="left"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/b" />
+
+    <TextView
+        android:id="@+id/plantActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Cropname"
+        android:layout_alignBottom="@+id/Cropname"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/Cropname"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/desc"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/c" />
+
+    <TextView
+        android:id="@+id/ActExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ExpenseLbl"
+        android:layout_alignBottom="@+id/ExpenseLbl"
+        android:layout_alignLeft="@+id/ActDate"
+        android:gravity="left"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/b" />
+
+</RelativeLayout>

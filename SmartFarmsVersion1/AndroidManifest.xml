@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="layout.layout"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_sfarmer"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="smartfarms.activities.MainActivity"
+     
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="smartfarms.activities.FirstScreen"
+       android:label="@string/app_name"
+            android:parentActivityName="MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.activities.RegistrationActivity"
+             android:label="@string/reg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.activities.HomeMenu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.CustomAdap"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.CustomAdapCrop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.Plantation"
+            android:label="@string/Plant_Activity"
+            android:parentActivityName="smartfarms.activities.ActivityHome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.Harvest"
+          android:label="@string/harvest"
+            android:parentActivityName="smartfarms.activities.ActivityHome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.Others"
+            android:label="@string/other"
+            android:parentActivityName="smartfarms.activities.ActivityHome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.activities.ShowDate1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.PlantListView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.AddPlantDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.AddSalesDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.AddHarvestDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="smartfarms.fragments.AddOtherDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

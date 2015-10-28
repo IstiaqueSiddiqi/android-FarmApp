@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/addImagePlant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:src="@drawable/a" />
+
+            <TextView
+                android:id="@+id/PlantCropName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:textAppearance="?android:attr/textAppearanceLarge"                
+                android:text="TextView"
+                android:textColor="@color/c" />
+        </TableRow>
+        <!-- Row 1 with single column -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="10dp" >
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/TextView4"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/plantdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/datestyle"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/pamt"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/amt"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/expenses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/pnlabourers"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/labours"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/labours"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btnSavePlant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="#63C964"
+                android:text="@string/save"
+                android:textColor="@color/w" />
+
+            <Button
+                android:id="@+id/btnViewPlant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#63C964"
+                android:text="@string/btn_view"
+                android:textColor="@color/w" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <EditText
+        android:id="@+id/lnameshowedit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/bordertext"
+        android:ems="10"
+        android:hint="@string/lname"
+        android:paddingLeft="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/addressshowedit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/bordertext"
+        android:ems="10"
+        android:hint="@string/addr"
+        android:paddingLeft="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/areashowedit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/bordertext"
+        android:ems="10"
+        android:hint="@string/area"
+        android:paddingLeft="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/DefaultLandCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="@string/setDefault"
+        android:textColor="@color/b"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/UpdateLandBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#63C964"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/save"
+            android:textColor="@color/w" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#63C964"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="delete"
+            android:textColor="@color/w" />
+    </LinearLayout>
+
+</LinearLayout>

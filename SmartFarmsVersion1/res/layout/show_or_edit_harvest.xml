@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:background="#ffffff"
+                android:padding="18dip"
+                android:text="@string/harvest"
+                android:textAlignment="gravity"
+                android:textColor="@color/b"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/heTextView4"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="18dip"
+                android:text="@string/date"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/hehtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/datestyle"
+                android:ems="10"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/heTextView_5"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="18dip"
+                android:text="@string/qty"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/heqty_harvest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/heTextView6"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="18dip"
+                android:text="@string/expences"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/heincome_harvest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/henol"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="18dip"
+                android:text="@string/labours"
+                android:textColor="@color/b" />
+
+            <EditText
+                android:id="@+id/heno_labourers_harvest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertext"
+                android:ems="10"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/heSaveHarvest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="#63C964"
+                android:text="@string/save"
+                android:textColor="@color/w" />
+
+            <Button
+                android:id="@+id/heDeleteHarvest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#63C964"
+                android:text="Delete"
+                android:textColor="@color/w" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
